@@ -62,10 +62,10 @@ func main() {
 	mux.HandleFunc("/me", meHandler)
 
 	server := &http.Server{
-		Addr:    ":3000",
+		Addr:    ":808",
 		Handler: mux,
 	}
 
-	log.Println("Server running on port 3000")
+	log.Println("Server running on port 8080")
 	log.Fatal(server.ListenAndServe())
 }
