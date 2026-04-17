@@ -62,7 +62,7 @@ func main() {
 	mux.HandleFunc("/me", meHandler)
 
 	server := &http.Server{
-		Addr:    ":808",
+		Addr:    ":8080",
 		Handler: mux,
 	}
 
